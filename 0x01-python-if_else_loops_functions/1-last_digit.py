@@ -14,4 +14,5 @@ def classify_ls(number):
         return "less than 6 and not 0"
 
 number = random.randint(-10000, 10000)
-print("Last digit of {} is {} and is {}".format(number, digit , classify_ls(number)))
+digit = abs(number) % 10
+print("Last digit of {} is {} and is {}".format(number, digit, classify_ls(number)))
